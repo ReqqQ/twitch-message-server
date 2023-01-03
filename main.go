@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	_ "log"
-	"os/exec"
 	_ "os/exec"
 )
 
@@ -15,13 +14,13 @@ type CurrentLivesResponse struct {
 }
 
 func main() {
-	//fmt.Println("Server start")
-	cmd := exec.Command("/bin/sh", "-c", "cd E:\\twitch-messages\\twitch-message-bot; go run main.go")
+	fmt.Println("Server start")
+	//cmd := exec.Command("/bin/sh", "-c", "cd E:\\twitch-messages\\twitch-message-bot; go run main.go")
 
 	//cmd := exec.Command("go run E:\\twitch-messages\\twitch-message-bot\\main.go")
-	if err := cmd.Run(); err != nil {
-		fmt.Println(err)
-	}
+	//if err := cmd.Run(); err != nil {
+	//	fmt.Println(err)
+	//}
 	//req := fasthttp.AcquireRequest()
 	//req.SetRequestURI("https://api.twitch.tv/helix/streams")
 	//req.Header.Add("Client-Id", "7vkqcgo3gt8z2uioc4hdyru7mczov2")
